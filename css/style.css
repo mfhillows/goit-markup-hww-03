@@ -161,6 +161,11 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.smalltitle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .advantage-list {
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +200,7 @@ footer {
 }
 
 .competence-list .item {
-  width: calc((100%-60px) / 3);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 0;
 }
@@ -236,19 +241,21 @@ footer {
 }
 
 .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 
 .our-force {
-  margin-top: 0;
-  margin-bottom: 0;
-
   color: var(--secondary-text-color);
 }
 
 .names {
+  margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -256,6 +263,9 @@ footer {
 }
 
 .position {
+  margin-top: 10px;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -317,11 +327,17 @@ footer {
   flex-wrap: wrap;
 }
 
-.address-list {
+.address-footer {
   width: 231px;
+
   margin-top: 11px;
   margin-bottom: 122px;
   margin-left: 214px;
+  font-style: initial;
+}
+
+.address-list {
+  font-style: normal;
 }
 
 .social-contacts {
@@ -356,15 +372,23 @@ footer {
 }
 
 .city-adress {
+  margin-top: 10px;
+
   color: var(--white-color);
 }
 
 .footer-contacts {
+  margin-top: 9px;
+
   color: var(--copypast-color);
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
+}
+
+.social-links-list {
+  margin-top: 21px;
 }
 
 .social-links-list .item {
@@ -432,7 +456,6 @@ footer {
   padding-right: 15px;
   width: 1200px;
 }
-
 
 .filter-list {
   display: flex;
