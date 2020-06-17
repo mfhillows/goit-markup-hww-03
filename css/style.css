@@ -5,7 +5,7 @@
   --white-color: #ffffff;
   --blue-color: #2196f3;
   --accent-color: #2196f3;
-  --copypast-color: #c4c4c4;
+  --copypast-color: rgba(255, 255, 255, 0.4);
   --footer-body-color: #2f303a;
   --card-body-color: #f5f4fa;
   --header-body-color: #ffffff;
@@ -22,6 +22,8 @@ footer {
   background-color: var(--footer-body-color);
 }
 
+/* Common properties */
+
 .list {
   list-style: none;
   padding: 0;
@@ -31,6 +33,39 @@ footer {
 .links,
 .logo {
   text-decoration: none;
+}
+
+.section-title {
+  margin-top: 0;
+  padding-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.smalltitle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
 }
 
 /* Header*/
@@ -108,8 +143,13 @@ footer {
 }
 
 /* Hero */
+
 .hero-section {
+  margin-bottom: 94px;
+  width: 1600px;
+  height: 600px;
   text-align: center;
+  background-color: grey;
 }
 
 .button {
@@ -136,34 +176,29 @@ footer {
 }
 
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 200px;
+  padding-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  background-color: crimson;
   color: var(--white-color);
 }
 
-/* Main */
+/* Our advantages */
 
-.section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+.advantage-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.smalltitle {
-  margin-top: 0;
-  margin-bottom: 0;
+.advantage {
+  margin-bottom: 94px;
 }
 
 .advantage-list {
@@ -194,6 +229,12 @@ footer {
   text-transform: uppercase;
 }
 
+/* Competence */
+
+.competence-container {
+  padding-bottom: 94px;
+}
+
 .competence-list {
   display: flex;
   flex-wrap: wrap;
@@ -210,19 +251,29 @@ footer {
 }
 
 .competence .smalltitle {
+  padding-top: 27px;
+  padding-bottom: 27px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
 
-  background-color: crimson;
+  background-color: grey;
   color: var(--white-color);
 }
 
 .competence .smalltitle:hover,
 .competence .smalltitle:focus {
   color: var(--accent-color);
+}
+
+/* Our team  */
+
+.team-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-list {
@@ -238,15 +289,6 @@ footer {
 
 .team-list .item:nth-child(4n) {
   margin-right: 0;
-}
-
-.text {
-  margin-top: 0;
-  margin-bottom: 0;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 .our-force {
@@ -277,9 +319,9 @@ footer {
 .social-items {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 16px;
   margin-right: 32px;
-  margin-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 24px;
   margin-left: 32px;
 }
 
@@ -290,6 +332,13 @@ footer {
 
 .social-items .item:nth-child(4n) {
   margin-right: 0;
+}
+
+/* Regular customers */
+
+.customers-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .customers-list {
@@ -307,19 +356,6 @@ footer {
   margin-right: 0;
 }
 
-.container {
-  margin-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-}
-
-.no-bottom {
-  margin-bottom: 0;
-}
-
 /* Footer */
 
 .footer {
@@ -330,10 +366,8 @@ footer {
 .address-footer {
   width: 231px;
 
-  margin-top: 11px;
-  margin-bottom: 122px;
+  margin-top: 45px;
   margin-left: 214px;
-  font-style: initial;
 }
 
 .address-list {
@@ -341,14 +375,9 @@ footer {
 }
 
 .social-contacts {
-  margin-top: 23px;
-  margin-bottom: 150px;
+  margin-top: 57px;
   margin-left: 69px;
   width: 208px;
-}
-
-.copy {
-  align-items: flex-end;
 }
 
 .social-links-list {
@@ -372,7 +401,7 @@ footer {
 }
 
 .city-adress {
-  margin-top: 10px;
+  margin-top: 8x;
 
   color: var(--white-color);
 }
@@ -394,6 +423,8 @@ footer {
 .social-links-list .item {
   margin-right: 10px;
   width: 44px;
+  padding-top: 32px;
+  padding-bottom: 68px;
 }
 
 .social-items .item:nth-child(4n) {
@@ -439,23 +470,25 @@ footer {
   color: var(--accent-color);
 }
 
+.copypast {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .developers {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 18px;
+  padding-bottom: 21px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   text-align: center;
+
+  color: var(--copypast-color);
 }
 
 /* PORTFOLIO */
-
-.container {
-  margin-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-}
 
 .filter-list {
   display: flex;
