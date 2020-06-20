@@ -10,6 +10,7 @@
   --card-body-color: #f5f4fa;
   --header-body-color: #ffffff;
   --logo-black-color: #000000;
+  --border-color: #eeeeee;
 }
 
 body {
@@ -70,16 +71,24 @@ footer {
 
 /* Header*/
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .logo {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  color: var(--logo-black-color);
+}
+
+.logo-blue {
   color: var(--blue-color);
 }
 
-.blue-logo {
-  color: var(--logo-black-color);
+.logo.inverse {
+  color: var(--white-color);
 }
 
 .main-nav {
@@ -114,8 +123,7 @@ footer {
   color: var(--accent-color);
 }
 
-.site-nav .current-studio,
-.site-nav .current-portfolio {
+.site-nav .current {
   color: var(--accent-color);
 }
 
@@ -145,8 +153,6 @@ footer {
 /* Hero */
 
 .hero-section {
-  margin-bottom: 94px;
-  width: 1600px;
   height: 600px;
   text-align: center;
   background-color: grey;
@@ -159,7 +165,6 @@ footer {
   padding: 10px 32px;
   min-width: 200px;
 
-  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -180,6 +185,7 @@ footer {
   margin-bottom: 0px;
   padding-top: 200px;
   padding-bottom: 30px;
+  min-width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -208,9 +214,6 @@ footer {
 
 .advantage-list .item {
   width: calc((100% - 90px) / 4);
-}
-
-.advantage-list .item {
   margin-right: 30px;
 }
 
@@ -359,49 +362,31 @@ footer {
 /* Footer */
 
 .footer {
+  padding-top: 60px;
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
+  /* justify-content: space-between; */
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .address-footer {
-  width: 231px;
-
-  margin-top: 45px;
-  margin-left: 214px;
+  margin-right: 69px;
 }
 
 .address-list {
   font-style: normal;
 }
 
-.social-contacts {
-  margin-top: 57px;
-  margin-left: 69px;
-  width: 208px;
-}
-
 .social-links-list {
   display: flex;
   justify-content: center;
-}
-
-.logo-footer {
-  margin-bottom: 8px;
-
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-
-  color: var(--blue-color);
-}
-
-.white-logo {
-  color: var(--white-color);
+  margin-top: 20px;
 }
 
 .city-adress {
-  margin-top: 8x;
+  margin-top: 20px;
 
   color: var(--white-color);
 }
@@ -416,8 +401,8 @@ footer {
   color: var(--accent-color);
 }
 
-.social-links-list {
-  margin-top: 21px;
+.social-contacts {
+  margin-right: 94px;
 }
 
 .social-links-list .item {
@@ -431,14 +416,8 @@ footer {
   margin-right: 0;
 }
 
-/* .get-in {
-  display: block;
-  margin-top: 57px;
-  margin-bottom: 20px;
-} */
-
 .social-links .smalltitle,
-.subscription-call {
+.sign-in .smalltitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -470,15 +449,10 @@ footer {
   color: var(--accent-color);
 }
 
-.copypast {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .developers {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 18px;
+  margin-top: 18px;
   padding-bottom: 21px;
+  margin-bottom: 0;
 
   font-weight: 400;
   font-size: 12px;
@@ -496,7 +470,20 @@ footer {
   justify-content: center;
 }
 
+.button-item {
+  margin-right: 8px;
+}
+
+.button-item:last-child {
+  margin-right: 0;
+}
+
 .button-filter {
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -509,7 +496,8 @@ footer {
 }
 
 .container-cards {
-  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 94px;
   background-color: var(--copypast-color);
 }
 
@@ -532,6 +520,27 @@ footer {
   margin-bottom: 0;
 }
 
+.link-card {
+  display: block;
+}
+
+.image-card {
+  display: block;
+}
+
+.card-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  background: var(--white-color);
+}
+
 .card-title {
   margin: 0;
   padding: 0;
@@ -540,10 +549,11 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--primary-text-color);
 }
 .card-description {
   margin: 0;
-  padding: 0;
+  padding-top: 4px;
 
   font-weight: 400;
   font-size: 16px;
@@ -553,6 +563,7 @@ footer {
 }
 
 .text-inside {
+  display: none;
   margin: 0;
   padding: 0;
 
