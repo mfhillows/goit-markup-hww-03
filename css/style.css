@@ -187,8 +187,7 @@ footer {
 }
 
 .hero-title {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 30px;
   min-width: 696px;
@@ -478,6 +477,12 @@ footer {
 
 /* PORTFOLIO */
 
+/* Filter-buttons */
+
+.container-filter {
+  padding-top: 93px;
+}
+
 .filter-list {
   display: flex;
   flex-wrap: wrap;
@@ -501,6 +506,10 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  background-color: var(--tertiary-body-color);
+  border: transparent;
+  border-radius: 4px;
 }
 
 .button-filter:hover,
@@ -508,6 +517,8 @@ footer {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
+
+/* Cards */
 
 .container-cards {
   padding-top: 50px;
