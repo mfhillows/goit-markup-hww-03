@@ -1,21 +1,27 @@
 :root {
-  --primary-body-color: #e5e5e5;
+  --primary-body-color: #ffffff;
+  --secondary-body-color: rgba(47, 48, 58, 0.8);
+  --tertiary-body-color: #f5f4fa;
+  --header-body-color: #ffffff;
+  --footer-body-color: #2f303a;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --white-color: #ffffff;
   --blue-color: #2196f3;
   --accent-color: #2196f3;
   --copypast-color: rgba(255, 255, 255, 0.4);
-  --footer-body-color: #2f303a;
-  --card-body-color: #f5f4fa;
-  --header-body-color: #ffffff;
   --logo-black-color: #000000;
   --border-color: #eeeeee;
+}
+
+header {
+  background-color: var(--header-body-color);
 }
 
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  background-color: var(--primary-body-color);
   color: var(--primary-text-color);
 }
 
@@ -155,7 +161,7 @@ footer {
 .hero-section {
   height: 600px;
   text-align: center;
-  background-color: grey;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .button {
@@ -221,6 +227,12 @@ footer {
   margin-right: 0;
 }
 
+.advantage-image {
+  width: 270px;
+  height: 120px;
+  background: var(--tertiary-body-color);
+}
+
 .advantage .smalltitle {
   margin-top: 0;
   margin-bottom: 10px;
@@ -263,7 +275,7 @@ footer {
   text-align: center;
   text-transform: uppercase;
 
-  background-color: grey;
+  background-color: var(--secondary-body-color);
   color: var(--white-color);
 }
 
@@ -277,6 +289,8 @@ footer {
 .team-container {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: var(--tertiary-body-color);
 }
 
 .team-list {
