@@ -31,6 +31,17 @@ footer {
 
 /* Common properties */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -44,6 +55,7 @@ footer {
 
 .section-title {
   margin-top: 0;
+  margin-bottom: 0;
   padding-bottom: 50px;
 
   font-weight: 700;
@@ -65,6 +77,12 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -190,7 +208,7 @@ footer {
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 30px;
-  min-width: 696px;
+  width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -288,7 +306,9 @@ footer {
 .team-container {
   padding-top: 94px;
   padding-bottom: 94px;
+}
 
+.team {
   background-color: var(--tertiary-body-color);
 }
 
@@ -335,19 +355,11 @@ footer {
 .social-items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-right: 32px;
   padding-top: 16px;
   padding-bottom: 24px;
   margin-left: 32px;
-}
-
-.social-items .item {
-  margin-right: 10px;
-  width: 44px;
-}
-
-.social-items .item:nth-child(4n) {
-  margin-right: 0;
 }
 
 /* Regular customers */
@@ -360,10 +372,12 @@ footer {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .customers-list .item {
   width: calc((100% - 150px) / 6);
+  height: 90px;
   margin-right: 30px;
   margin-bottom: 0;
 }
@@ -548,10 +562,10 @@ footer {
 .link-card {
   display: block;
 }
-
+/*
 .image-card {
   display: block;
-}
+} */
 
 .card-content {
   padding-top: 20px;
