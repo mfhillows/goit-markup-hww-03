@@ -251,8 +251,8 @@ img {
 }
 
 .advantage .smalltitle {
-  margin-top: 0;
-  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -318,9 +318,14 @@ img {
 }
 
 .team-list .item {
-  width: calc((100% - 90) / 4);
+  width: calc((100% - 90px) / 4);
   margin-right: 30px;
   margin-bottom: 0;
+
+  background-color: var(--white-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .item:nth-child(4n) {
@@ -355,11 +360,12 @@ img {
 .social-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-right: 32px;
+  justify-content: space-between;
+
   padding-top: 16px;
   padding-bottom: 24px;
-  margin-left: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 /* Regular customers */
@@ -373,13 +379,21 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .customers-list .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: calc((100% - 150px) / 6);
   height: 90px;
   margin-right: 30px;
   margin-bottom: 0;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .customers-list .item:nth-child(6n) {
@@ -406,7 +420,7 @@ img {
   font-style: normal;
 }
 
-.social-links-list {
+.social-links {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -432,7 +446,7 @@ img {
   margin-right: 94px;
 }
 
-.social-links-list .item {
+.social-links .item {
   margin-right: 10px;
   width: 44px;
   padding-top: 32px;
@@ -443,7 +457,7 @@ img {
   margin-right: 0;
 }
 
-.social-links .smalltitle,
+.social-contacts .smalltitle,
 .sign-in .smalltitle {
   font-weight: 700;
   font-size: 14px;
